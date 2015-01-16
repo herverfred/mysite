@@ -30,12 +30,12 @@ urlpatterns = patterns('',
         },
         name='login'),
     url(r'^logout$',
+    #	include(admin.site.urls),
         'django.contrib.auth.views.logout',
         {
-            'next_page': 'www.baidu.com',
+            'next_page': '/',
         },
         name='logout'),
-
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
