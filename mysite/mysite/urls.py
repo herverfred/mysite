@@ -1,5 +1,6 @@
 """
 Definition of urls for mysite.
+
 """
 
 from datetime import datetime
