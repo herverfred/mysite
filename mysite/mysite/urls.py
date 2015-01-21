@@ -33,8 +33,7 @@ urlpatterns = patterns('',
     #	include(admin.site.urls),
         'django.contrib.auth.views.logout',
         {
-            #'next_page': '/',
-            'current_app':'app',
+            'next_page': '/',
         },
         name='logout'),
     # Uncomment the admin/doc line below to enable admin documentation:
