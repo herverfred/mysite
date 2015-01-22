@@ -6,7 +6,7 @@ def index(request):
     #t = get_template('index.html')
     #html = t.render(Context({'Context':'hihi-Tim'}))
     t = Template(u'My name is {{name}}')
-    html = t.render(Context({'name':'hihi-tim-oooooooyyyyyyyyy'}))
+    html = t.render(Context({'name':'hihi-tim'}))
 
     return HttpResponse(html)
 
